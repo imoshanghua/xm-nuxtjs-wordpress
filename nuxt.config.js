@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Xuanmo Blog | WEB前端笔记',
+    title: '呆头鹅小陌 | 去做你想做的，你比自己想的更强大！',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
@@ -104,17 +104,17 @@ module.exports = {
 
   proxy: {
     '/api': {
-      target: 'https://www.xuanmo.xin',
+      target: 'https://moshanghua.net',
       pathRewrite: {
         '^/api': '/'
       }
     },
     '/wp-content': {
-      target: 'https://www.xuanmo.xin'
+      target: 'https://moshanghua.net'
     }
   },
 
   env: {
-    baseUrl: 'https://www.xuanmo.xin'
+    baseUrl: 'https://moshanghua.net'
   }
 }
