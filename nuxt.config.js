@@ -18,7 +18,7 @@ module.exports = {
       // 百度主推文章收录用
       { src: 'https://zz.bdstatic.com/linksubmit/push.js' },
       // 加入百度统计js，使用时自行添加为自己的
-      { src: 'https://hm.baidu.com/hm.js?' }
+      { src: 'https://hm.baidu.com/hm.js?e3a6702fe5553d80fe84804ab8207878' }
     ]
   },
 
