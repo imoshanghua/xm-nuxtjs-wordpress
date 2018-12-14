@@ -133,8 +133,7 @@ function appthemes_add_quicktags()
         QTags.addButton('c-code', 'c-code', '<span class="code">', '</span>');
         QTags.addButton('h2', 'h2', '<h2>', '</h2>');
         QTags.addButton('2-text', '2-text', '<span style="display:inline-block;width:28px;">', '</span>');
-        QTags.addButton('star', 'star', '<i class="iconfont icon-star" class="c-theme">', '</i>');
-        QTags.addButton('red-star', 'red-star', '<i class="iconfont icon-star" style="color: #f00;">', '</i>');
+        QTags.addButton('star', 'star', '<i class="iconfont icon-star c-theme">', '</i>');
         // 添加html转换容器
         jQuery(function () {
             jQuery('#html-transform').click(function () {
@@ -379,7 +378,7 @@ add_action('init', 'disable_emojis');
  */
 function comments_embed_img($comment)
 {
-  $comment = preg_replace('/(\[img\](\S+)\[\/img\])+/', '<img src="$2" style="vertical-align: bottom; max-width: 40%; max-height: 250px;" />', $comment);
+  $comment = preg_replace('/(\[img\]\s*(\S+)\s*\[\/img\])+/', '<img src="$2" style="vertical-align: bottom; max-width: 40%; max-height: 250px;" />', $comment);
   return $comment;
 }
 
