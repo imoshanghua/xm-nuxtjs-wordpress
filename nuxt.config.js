@@ -2,7 +2,7 @@ export default {
   mode: 'universal',
 
   head: {
-    title: '呆头鹅小陌 | 去做你想做的，你比自己想的更强大！',
+    title: '呆头鹅小陌|去做你想做的，你比自己想的更强大！',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
@@ -18,7 +18,7 @@ export default {
       // 百度主推文章收录用
       { src: 'https://zz.bdstatic.com/linksubmit/push.js' },
       // 加入百度统计js，使用时自行添加为自己的
-      { src: 'https://hm.baidu.com/hm.js?e3a6702fe5553d80fe84804ab8207878' }
+      { src: 'https://hm.baidu.com/hm.js?' }
     ]
   },
 
@@ -73,34 +73,18 @@ export default {
   proxy: {
     '/api': {
       target: 'https://moshanghua.net',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> ad5f5733a4410cf4152b9db1b0bd70e7d2897579
       // target: 'http://localhost:8888',
-=======
->>>>>>> 82ebdea9f5697ea4e43af3a4742345bdb3ea315e
       pathRewrite: {
         '^/api': '/'
       }
     },
     '/wp-content': {
-      target: 'https://moshanghua.net'
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> ad5f5733a4410cf4152b9db1b0bd70e7d2897579
+      target: 'https://www.xuanmo.xin'
       // target: 'http://localhost:8888'
-=======
->>>>>>> 82ebdea9f5697ea4e43af3a4742345bdb3ea315e
     }
   },
 
   env: {
-<<<<<<< HEAD
     baseUrl: '/api'
-=======
-    baseUrl: 'https://moshanghua.net'
->>>>>>> 82ebdea9f5697ea4e43af3a4742345bdb3ea315e
   }
 }
