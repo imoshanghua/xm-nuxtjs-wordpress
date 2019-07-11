@@ -73,18 +73,34 @@ export default {
   proxy: {
     '/api': {
       target: 'https://moshanghua.net',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ad5f5733a4410cf4152b9db1b0bd70e7d2897579
       // target: 'http://localhost:8888',
+=======
+>>>>>>> 82ebdea9f5697ea4e43af3a4742345bdb3ea315e
       pathRewrite: {
         '^/api': '/'
       }
     },
     '/wp-content': {
       target: 'https://moshanghua.net'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ad5f5733a4410cf4152b9db1b0bd70e7d2897579
       // target: 'http://localhost:8888'
+=======
+>>>>>>> 82ebdea9f5697ea4e43af3a4742345bdb3ea315e
     }
   },
 
   env: {
+<<<<<<< HEAD
     baseUrl: '/api'
+=======
+    baseUrl: 'https://moshanghua.net'
+>>>>>>> 82ebdea9f5697ea4e43af3a4742345bdb3ea315e
   }
 }
