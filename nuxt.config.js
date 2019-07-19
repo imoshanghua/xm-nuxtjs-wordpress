@@ -2,7 +2,7 @@ export default {
   mode: 'universal',
 
   head: {
-    title: '呆头鹅小陌|去做你想做的，你比自己想的更强大！',
+    title: 'Xiaomo Blog|去做你想做的，你比自己想的更强大！',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
@@ -79,7 +79,7 @@ export default {
       }
     },
     '/wp-content': {
-      target: 'https://www.xuanmo.xin'
+      target: 'https://moshanghua.net'
       // target: 'http://localhost:8888'
     }
   },
