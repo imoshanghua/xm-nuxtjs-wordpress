@@ -2,7 +2,7 @@ export default {
   mode: 'universal',
 
   head: {
-    title: 'Xuanmo Blog | WEB前端笔记',
+    title: '呆头鹅小陌|去做你想做的，你比自己想的更强大！',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
@@ -72,7 +72,7 @@ export default {
   // 将此处2个地址改为自己的地址
   proxy: {
     '/api': {
-      target: 'https://www.xuanmo.xin',
+      target: 'https://moshanghua.net',
       // target: 'http://localhost:8888',
       pathRewrite: {
         '^/api': '/'
