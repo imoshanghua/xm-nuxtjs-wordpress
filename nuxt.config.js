@@ -2,7 +2,7 @@ export default {
   mode: 'universal',
 
   head: {
-    title: 'Xiaomo Blog|等我熬尽一日苦，喂你一口甜！ ',
+    title: 'Xiaomo Blog|等我熬尽一日苦，喂你一口甜!',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
