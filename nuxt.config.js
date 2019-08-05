@@ -48,6 +48,7 @@ export default {
     { src: '~/plugins/element-ui', ssr: true },
     { src: '~/plugins/message', ssr: false },
     { src: '~/plugins/icon', ssr: true }
+    // { src: '~/plugins/common', ssr: false }
   ],
 
   modules: [
