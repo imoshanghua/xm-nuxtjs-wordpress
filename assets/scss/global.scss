@@ -38,6 +38,7 @@ body {
   width: 100%;
   background-color: $color-main-background;
   font: $font-size-base "play", PingFangSC-Regular,Microsoft Yahei;
+  line-height: $line-height;
   color: $color-main-text;
 }
 
@@ -102,17 +103,10 @@ body {
     }
   }
 
-  &.notice {
-    .content {
-      line-height: 2;
-    }
-  }
-
   // 评论列表
   &.comment {
     .list {
       display: flex;
-      // align-items: center;
       padding: 8px 0;
       border-bottom: 1px dashed $color-main-background;
 
@@ -122,8 +116,11 @@ body {
 
       &:hover {
         .thumbnail {
-          transition: all 10s;
-          transform: rotate(20turn);
+          transform: rotate(666turn);
+          transition-delay: 1s;
+          transition-property: all;
+          transition-duration: 59s;
+          transition-timing-function: cubic-bezier(.34, 0, .84, 1);
         }
       }
     }
@@ -156,8 +153,9 @@ body {
 
     .comment-text {
       max-height: 34px;
+      margin: 3px 0;
       font-size: $font-size-small;
-      @include ellipsisMultiline(2);
+      @include ellipsisMultiline(2, $line-height, $font-size-small);
     }
 
     .title {
@@ -339,12 +337,14 @@ body {
     transition: 0.5s;
   }
 
+  // 列表内容
   .list-content {
     flex: 1;
     position: relative;
     margin-left: 15px;
   }
 
+  // 标题
   .title {
     margin-bottom: 10px;
     font-size: 18px;
@@ -357,16 +357,33 @@ body {
         color: $color-theme;
       }
     }
+
+    .classify {
+      position: relative;
+      margin-right: 10px;
+      padding: 3px 5px;
+      background-color: $color-theme;
+      border-radius: 3px;
+      font-size: $font-size-small;
+      color: #fff;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        border: {
+          width: 5px;
+          style: solid;
+          color: transparent transparent transparent $color-theme;
+        }
+        transform: translateY(-50%);
+      }
+    }
   }
 
   .summary {
-    display: -webkit-box;
-    overflow: hidden;
-    height: 80px;
-    -webkit-box-orient: vertical;
-    word-break: break-all;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
+    @include ellipsisMultiline(3, 1.8);
     line-height: 1.8;
   }
 
@@ -375,9 +392,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    margin-top: 10px;
     font-size: $font-size-small;
     color: $color-golden;
   }

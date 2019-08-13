@@ -61,7 +61,8 @@
         </nuxt-link>
         <div class="list-content">
           <h2 class="title">
-            <nuxt-link :to="{ name: 'details-id', params: { id: item.id } }" v-html="item.title.rendered"></nuxt-link>
+            <span class="classify">{{ item.articleInfor.classify[0].name }}</span>
+            <nuxt-link :to="{ name: 'details-id', params: { id: item.id } }" class="vertical-middle" v-html="item.title.rendered"></nuxt-link>
           </h2>
           <p class="summary">{{ item.articleInfor.summary }}</p>
           <div class="opeartion">
@@ -153,7 +154,10 @@ export default {
   }
 
   &.style-2 {
+    overflow: hidden;
     background-color: #fff;
+    border-radius: $border-radius;
+
     .banner-title {
       position: absolute;
       bottom: 0;
