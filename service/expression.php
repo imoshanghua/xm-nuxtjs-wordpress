@@ -454,6 +454,11 @@
                     "url"     => "/images/smilies/qq/youling.gif",
                     "title"   => "幽灵",
                     "code"    => "youling"
+                ),
+                array(
+                    "url"     => "/images/smilies/qq/wulian.gif",
+                    "title"   => "捂脸",
+                    "code"    => "wulian"
                 )
             )
         ),

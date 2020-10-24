@@ -433,6 +433,7 @@ function xm_custom_smilies_conversion()
         "[xigua]"        => "qq/xigua.gif",
         "[yangtuo]"      => "qq/yangtuo.gif",
         "[youling]"      => "qq/youling.gif",
+        "[wulian]"      => "qq/wulian.gif",
         "[色]"            => 'icon_razz.gif',
         "[难过]"           => 'icon_sad.gif',
         "[闭嘴]"           => 'icon_evil.gif',
